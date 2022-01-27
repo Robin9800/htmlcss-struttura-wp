@@ -1,0 +1,89 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+  margin: 0px auto 10px;
+}
+
+header,
+footer {
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
+.inner-float {
+  float: left;
+  width: calc(100% / 3);
+  text-align: center;
+}
+
+.left-col {
+  float: left;
+  width: 28%;
+  margin-right: 2%;
+}
+
+.center-col {
+  float: left;
+  width: 40%;
+}
+
+.right-col {
+  float: left;
+  width: 28%;
+  margin-left: 2%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.debug header,
+.debug footer {
+  border: 2px solid #00ff00;
+}
+
+.debug .container {
+  border: 2px solid #ff0000;
+}
+
+.debug .left-col {
+  border: 2px solid #0000ff;
+  height: 200px;
+}
+.debug .center-col {
+  border: 2px solid pink;
+  height: 250px;
+}
+.debug .right-col {
+  border: 2px solid #ff00ff;
+  height: 200px;
+}
+.debug .inner-float {
+  border: 2px solid #ff00ff;
+  height: 50px;
+}
+
+body {
+  font-size: 20px;
+}
+
+footer.container {
+  font-size: 1.5rem;
+}
+
+.left-col {
+  font-size: 0.5rem;
+}
+
+.inner-float {
+  font-size: 1.5rem;
+}
