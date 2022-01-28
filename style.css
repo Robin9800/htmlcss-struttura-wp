@@ -4,12 +4,16 @@
   box-sizing: border-box;
 }
 
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .container {
   
-  margin-top: 20px;
-  margin-right: 100px;
-  margin-left: 100px;
-  height: 1200px;
+  margin: 15px auto;
+  width: 70%;
 }
 
 .violet{
@@ -32,8 +36,27 @@
 .light-blue{
     background-color: lightblue;
     width: 100%;
-    height: 600px;
+    height: 500px;
     margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.riquadro{
+    float: left;
+    width: 25%;
+    border-top: 16px solid blue;
+    border-bottom: 16px solid blue;
+    border-right: 16px solid blue;
+    height: 30px;
+}
+
+.big{
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 46%;
+    border-right: 16px solid blue;
+    border-left: 16px solid blue;
 }
 
 .purple{
@@ -43,38 +66,7 @@
     margin-top: 10px;
 }
 
-.riquadro1{
-    background-color: lightblue;
-    border-bottom: 10px solid blue;
-    float: left;
-    width: 100%;
-    height: 100px;
+.debug .riquadro{
+ background-color: lightblue;
+ height: 90%;
 }
-
-.riquadro2{
-    background-color: lightblue;
-    border-bottom: 16px solid blue;
-    border-right: 16 solid blue;
-    float: left;
-    width: 20%;
-    height: auto;
-} 
-
-.riquadro3{
-    background-color: lightblue;
-    border-bottom: 16px solid blue;
-    border-left: 16 solid blue;
-    float: left;
-    width: 20%;
-    height: auto;
-}
-
-.riquadro4{
-    background-color: lightblue;
-    border-bottom: 16px solid blue;
-    border-left: 16 solid blue;
-    float: left;
-    width: 20%;
-    height: auto;
-}
-
